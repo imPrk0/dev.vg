@@ -2,7 +2,9 @@ package util
 
 import (
 	"github.com/Pallinder/go-randomdata"
+	"math/rand"
 	"strings"
+	"time"
 )
 
 func GenerateRandomWords(count int) []string {
@@ -17,15 +19,17 @@ func GenerateRandomSentence(wordCount int) []string {
 	var sentence []string
 	for i := 0; i < wordCount; i++ {
 		sentences := strings.Split(
-			randomdata.Paragraph(),
+			strings.Replace(
+				randomdata.Paragraph(),
+				". ",
+				".",
+				-1,
+			),
 			".",
 		)
 		sentence = append(
 			sentence,
-			sentences[randomdata.Number(
-				0,
-				len(sentences)-1,
-			)],
+			sentences[0]+".",
 		)
 	}
 	return sentence
@@ -42,13 +46,16 @@ func GenerateRandomParagraph(sentenceCount int) []string {
 	return paragraph
 }
 
-func GenerateRandomText(paragraphCount int) []string {
-	var text []string
-	for i := 0; i < paragraphCount; i++ {
-		text = append(
-			text,
-			randomdata.FirstName(randomdata.RandomGender),
-		)
+func GenerateRandomText(count int) []string {
+	rand.Seed(time.Now().UnixNano())
+	charset := "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+	result := make([]string, 1)
+	randomString := make([]byte, count)
+	for i := 0; i < count; i++ {
+		randomString[i] = charset[rand.Intn(len(charset))]
 	}
-	return text
+	result[0] = string(randomString)
+
+	return result
 }
