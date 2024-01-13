@@ -1,4 +1,4 @@
-<h1><center>🛠️&nbsp;dev.vg&nbsp;👨‍💻</center></h1>
+<center><h1>🛠️&nbsp;dev.vg&nbsp;👨‍💻</h1></center>
 
 ## 📖 The Story
 
@@ -111,6 +111,15 @@ If you have better ideas, please put them forward.
 - Email: [m@dev.vg](mailto:m@dev.vg)
 - X (formerly Twitter): [@imPrk_](https://x.com/imPrk_)
 - GitHub: [@imPrk0](https://github.com/imPrk0) | [Project](https://github.com/imPrk0/dev.vg) | [Issues](https://github.com/imPrk0/dev.vg/issues)
+
+## ⚗️ Stacks
+
+- [Go](https://go.dev/) + [Gin](https://github.com/gin-gonic/gin)
+
+## ❤️ Thanks
+
+- CodingStartup: [sdfsdf.dev](https://sdfsdf.dev/) / [YouTube](https://www.youtube.com/@CodingStartup)
+- GoReleaser: [Website](https://goreleaser.com/)
 
 ## 🚀 Project and Copyright
 
