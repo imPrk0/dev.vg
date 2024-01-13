@@ -1,0 +1,30 @@
+version: "1.0.1"
+services:
+  redis:
+    container_name: redis
+    image: bitnami/redis:latest
+    restart: unless-stopped
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis_data:/bitnami/redis/data
+
+  dev_vg:
+    container_name: dev_vg
+    image: cprk/dev.vg:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - temp_data:/cache
+      - ./dev_vg/prk_database.db:/dev_vg/prk_database.db
+
+volumes:
+  redis_data:
+    driver: local
+  temp_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: $PWD/data
+      o: bind
