@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">🛠️&nbsp;dev.vg&nbsp;👨‍💻</h1>
+<h1><center>🛠️&nbsp;dev.vg&nbsp;👨‍💻</center></h1>
 
 ## 📖 The Story
 
