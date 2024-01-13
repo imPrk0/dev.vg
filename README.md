@@ -1,4 +1,13 @@
-<center><h1>🛠️&nbsp;dev.vg&nbsp;👨‍💻</h1></center>
+<h1 align="center">🛠️&nbsp;dev.vg&nbsp;👨‍💻</h1>
+
+<p align="center">
+<a href="https://github.com/imPrk0/dev.vg/releases"><img src="https://img.shields.io/badge/Version-1.0.1-blue.svg?style=flat-square" alt="License" /></a>
+<img alt="Go" src="https://img.shields.io/badge/Go-%3E%3D1.20-brightgreen.svg?style=flat-square" />
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="License" /></a>
+<a href="https://github.com/imPrk0"><img src="https://img.shields.io/badge/Author-Prk-blue.svg?style=flat-square" alt="Author" /></a>
+<br /><br />
+&gt;&gt;&nbsp;<a href="https://dev.vg/">WEBSITE</a>&nbsp;&lt;&lt;
+</p>
 
 ## 📖 The Story
 
