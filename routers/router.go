@@ -23,7 +23,7 @@ func InitRouter() *gin.Engine {
 		switch {
 		case util.MatchAndHandle(param, `^/(\d+)[swpt],?$`):
 			controllers.HandleRandomText(c, param)
-		case util.MatchAndHandle(param, `^/(\d+)x(\d+)\.(png|jpg),([a-zA-Z]+),([a-zA-Z]+),?$`):
+		case util.MatchAndHandle(param, `^/(\d+)x(\d+)\.(pn|jp)g(,([a-zA-Z0-9]+),([a-zA-Z0-9]+))?$`):
 			controllers.HandleImage(c, param)
 		case util.MatchAndHandle(param, `^/random,(.*)$`):
 			controllers.HandleRandomPick(c, param)
