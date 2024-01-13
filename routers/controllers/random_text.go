@@ -53,6 +53,6 @@ func HandleRandomText(c *gin.Context, param string) {
 
 		c.JSON(http.StatusOK, apiData)
 	} else {
-		c.String(http.StatusBadRequest, "Invalid format for Case 1")
+		NotFound404(c)
 	}
 }
